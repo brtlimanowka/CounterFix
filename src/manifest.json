@@ -1,0 +1,23 @@
+{
+
+    "manifest_version": 2,
+    "name": "CounterFix",
+    "version": "0.2",
+    "description": "Corrects DOM placement in list-type reports. Icon by Anastasia Kuznetsova https://www.iconfinder.com/zapolzun",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["*://neste.service-now.com/*"],
+            "js": ["content_scripts/dom.js"]
+        }
+    ],
+    "browser_action": {
+        "default_title": "CounterFix"
+    },
+    "icons": {
+        "16": "icons/16.png",
+        "48": "icons/48.png",
+        "128": "icons/128.png"
+    }
+
+}
